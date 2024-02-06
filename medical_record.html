@@ -6,7 +6,10 @@
     <title>Medical Record</title>
   </head>
   <body>
-    <h1>MEDICAL RECORD</h1>
+    <header>
+      <h1>MEDICAL RECORD</h1>
+    </header>
+
     <!-- navigation -->
     <nav class="w3-bar w3-black">
       <a href="#home" class="w3-button w3-bar-item">Home</a>
@@ -15,19 +18,39 @@
     </nav>
 
     <form>
-      <label for="fname">identity:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Password:</label><br />
-      <input type="password" id="lname" name="lname" /><br />
-      <input type="submit" value="submit" /><br />
+      <fieldset>
+        <label for="fname">identity:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="fullname"
+        /><br />
+        <label for="lname">Password:</label><br />
+        <input
+          type="password"
+          id="lname"
+          name="lname"
+          placeholder="password"
+        /><br />
+        <input type="submit" value="submit" /><br />
+      </fieldset>
     </form>
 
     <form action="/action_page.php">
       <p>write carefully!</p>
-      <label for="name">full name:</label><br />
-      <input type="text" id="name" name="fullname" /><br />
+      <label for="name"><strong>fullname</strong></label
+      ><br />
+      <input
+        type="text"
+        id="name"
+        name="fullname"
+        placeholder="fullname"
+      /><br />
       <label for="age">age :</label><br />
-      <input type="text" id="age" name="age" /><br />
+      <input type="text" id="age" name="age" placeholder="0-100" /><br />
+      <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" />
+      <input type="submit" value="submit" />
 
       <br />
 
@@ -40,8 +63,13 @@
       <br />
 
       <p>if you have what it is?(ignore if you dont have)</p>
-      <label for="med">medical_history:</label><br />
-      <input type="text" id="med" name="medical_history" /><br />
+      <input
+        type="text"
+        id="med"
+        name="medical history"
+        placeholder="hypertension, diabetes, etc"
+      /><br />
+      <input type="submit" value="submit" />
 
       <br />
 
@@ -55,10 +83,33 @@
       </select>
       <br />
       <input type="submit" value="submit" />
+      <style>
+        figure {
+          border: 1px #cccccc solid;
+          padding: 4px;
+          margin: auto;
+        }
+        figcaption {
+          background-color: black;
+          color: white;
+          font-style: bold;
+          padding: 1px;
+          text-align: center;
+        }
+      </style>
+      <figure>
+        <img
+          src="https://infodrg.com/wp-content/uploads/2020/12/1206D6AF-6FA6-41C5-A2F5-D49B1D86622A.jpeg"
+          alt="odontogram"
+          style="width: 50%"
+          100%
+        />
+        <figcaption>Fig.1 odontogram</figcaption>
+      </figure>
 
       <br />
 
-      <p>where is the problem in regio :</p>
+      <p>what is the problem:</p>
       <input type="checkbox" name="caries" id="caries" value="1" />
       <label for="caries">caries</label> <br />
       <input type="checkbox" name="radiks" id="radiks" value="2" />
@@ -68,8 +119,29 @@
       <input type="submit" value="submit" />
 
       <br />
-    </form>
 
-    <p>U can contact us in 081122223345</p>
+      <p>anamnesa :</p>
+      <textarea
+        id="anamnesa"
+        name="anamnesa"
+        rows="3"
+        cols="50"
+        placeholder="anamnesa"
+      >
+      </textarea>
+      <br />
+      <input type="submit" value="submit" />
+
+      <br />
+    </form>
+    <footer>
+      <p>U can contact us in 081122223345</p>
+      <br />
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/399/399271.png"
+        alt="plus medika"
+        width="10%"
+      />
+    </footer>
   </body>
 </html>
