@@ -1,0 +1,123 @@
+* {
+  margin: 1px;
+  width: 100%;
+  font-family: "Kanit", sans-serif;
+}
+
+.navigation {
+  color: black;
+  background-color: whitesmoke;
+  font-size: 1em;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: black;
+  position: sticky;
+  text-align: right;
+  z-index: 100;
+  top: 0px;
+}
+
+.nav1 {
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 1em;
+}
+
+.identity {
+  background-color: gainsboro;
+  flex-wrap: wrap;
+  margin-right: 50%;
+  margin-bottom: 1em;
+}
+
+.main {
+  background-color: gainsboro;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box1 {
+  padding: 1em;
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 300px;
+  height: 200px;
+}
+.box2 {
+  padding: 1em;
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 250px;
+  height: 100px;
+}
+.box3 {
+  padding: 1em;
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 200px;
+  height: 100px;
+}
+
+.box4 {
+  padding: 1em;
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 300px;
+  height: 200px;
+}
+
+.main2 {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+}
+
+.img1 {
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 70%;
+  height: 70%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.figcaption {
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  color: whitesmoke;
+  font-weight: 600;
+  padding: 1em;
+  justify-content: center;
+  text-align: center;
+}
+.img2 {
+  border: 1px solid gainsboro;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 0 rgba(0, 0, 0, 0.05);
+  width: 10%;
+  height: 10%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only-screen and (max-width: 360px) {
+  .main & .main2 {
+    background: whitesmoke;
+  }
+}
