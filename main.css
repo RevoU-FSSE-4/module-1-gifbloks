@@ -4,6 +4,10 @@
   font-family: "Kanit", sans-serif;
 }
 
+a {
+text-decoration: none;
+color: black;
+}
 .navigation {
   color: black;
   background-color: whitesmoke;
@@ -12,15 +16,27 @@
   border-width: 1px;
   border-color: black;
   position: sticky;
-  text-align: right;
   z-index: 100;
   top: 0px;
+  padding-left: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+width: 1.5em;
+height: 1.5em;
 }
 
 .nav1 {
-  position: -webkit-sticky;
-  position: sticky;
-  margin: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.main-mr{
+width: 75%;
+padding-left: 5%;
+padding-right: 5%;
 }
 
 .identity {
@@ -32,6 +48,7 @@
 
 .main {
   background-color: gainsboro;
+  gap: 25%;
 }
 
 .container {
@@ -80,12 +97,6 @@
   height: 200px;
 }
 
-.main2 {
-  background-color: gainsboro;
-  display: flex;
-  justify-content: center;
-}
-
 .img1 {
   border: 1px solid gainsboro;
   border-radius: 0.5em;
@@ -94,6 +105,7 @@
   height: 70%;
   justify-content: center;
   flex-direction: column;
+  display: flex;
 }
 
 .figcaption {
@@ -117,7 +129,7 @@
 }
 
 @media only-screen and (max-width: 360px) {
-  .main & .main2 {
+  .main {
     background: whitesmoke;
   }
 }

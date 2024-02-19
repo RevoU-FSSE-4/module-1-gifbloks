@@ -12,13 +12,24 @@
   <body>
     <header class="navigation">
       <!-- navigation -->
-      <nav> 
-        <a href="#home" class="nav1">Home</a>
-        <a href="#contact" class="nav1">contact</a>
-        <a href="#setting" class="nav1">setting</a>
-      </nav>
+      <div>
+        <img 
+        src="./asset/plus.svg" 
+        alt="plus logo"
+        class="navbar-logo"
+        >
+      </div>
+      <div class="nav1">
+        <nav> 
+          <a href="home">Home</a>
+          <a href="contact">contact</a>
+          <a href="setting">setting</a>
+        </nav>
+      </div>
     </header>
-    <h1>MEDICAL RECORD</h1>
+    
+    <div class="main-mr">
+      <h1>MEDICAL RECORD</h1>
       <meta name="keywords" content="medical, record" />
       <meta name="description" content="medical record for dentist" />
       <meta name="author" content="yoshua" />
@@ -43,7 +54,7 @@
         <input type="submit" value="submit" /><br />
       </fieldset>
     </form>
-
+    
     <!-- identity -->
     <main class="main">
       <section>
@@ -106,32 +117,33 @@
            <label for="tartar">tartar</label>
            <input type="submit" value="submit" />
           </div>
-        </div>
-      </section>
-      
-    </main>
-    <!-- odontogram -->
-    <main class="main2">
-      <figure>
-        <img class="img1"
-          src="https://infodrg.com/wp-content/uploads/2020/12/1206D6AF-6FA6-41C5-A2F5-D49B1D86622A.jpeg"
-          alt="odontogram"/>
-        <figcaption class="figcaption">Fig.1 odontogram</figcaption>
-      </figure>     
-    </main>
-    <!-- anamnesa -->
-    <main>
-      <p>anamnesa :</p>
-        <textarea
+
+          <!-- odontogram -->
+        <figure>
+          <img class="img1"
+            src="https://infodrg.com/wp-content/uploads/2020/12/1206D6AF-6FA6-41C5-A2F5-D49B1D86622A.jpeg"
+            alt="odontogram"/>
+          <figcaption class="figcaption">Fig.1 odontogram</figcaption>
+        </figure>
+
+          <!-- anamnesa -->
+          <p>anamnesa :</p>
+          <textarea
           id="anamnesa"
           name="anamnesa"
           rows="3"
-          cols="50"
+          cols="10"
           placeholder="anamnesa">
-        </textarea>
-      <input type="submit" value="submit" />
+          </textarea>
+          <input type="submit" value="submit" /> 
+        </div>
+      </section>
     </main>
-      <br />
+    </div>
+      
+
+    <br />
+
     <footer>
       <p>U can contact us in 081122223345</p>
       <br />
