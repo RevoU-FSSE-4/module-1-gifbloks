@@ -25,3 +25,5 @@
 
 - contact in 081122223345
 - ![logo] (https://cdn-icons-png.flaticon.com/512/399/399271.png)
+- github pengumpulan tugas (https://github.com/RevoU-FSSE-4/module-1-gifbloks.git)
+- netlify pengumpulan tugas (https://tugas-week-2-yoshua.netlify.app)
